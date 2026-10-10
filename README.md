@@ -50,5 +50,5 @@ Blinzeln und Augenbewegung gibt es nur bei der Figur, nicht beim Foto.
   `?nogl` zeigt die Seite ohne WebGL.
 - `prefers-reduced-motion`: keine Umherblicke, keine Regentropfen, langsamere Zeit.
 
-Lokal starten: `npx http-server` oder `python3 -m http.server` im Ordner `spiegelkabinett/`. Die Kamera
+Lokal starten: `npx http-server` oder `python3 -m http.server` im Repo-Ordner. Die Kamera
 braucht HTTPS oder `localhost`.

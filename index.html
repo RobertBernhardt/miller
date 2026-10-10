@@ -1,481 +1,226 @@
-<!DOCTYPE html>
-<html lang="de">
+<!doctype html>
+<html lang="de" data-face="img/face.jpg" data-face-frame="0.41,0.45,1.17">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miller & Bernhauer | Rechtsanwälte Fachanwälte in Ulm</title>
-    <meta name="description" content="Spezialisierte Rechtsberatung in Ulm - Bau- und Mietrecht, Familienrecht, Arbeitsrecht und mehr. Kompetente Anwälte mit langjähriger Erfahrung.">
-    <link rel="icon" href="images/logo.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#140e0c">
+<title>Spiegelkabinett</title>
+<meta name="description" content="Neun Spiegel, eine Person: Beim Scrollen gleiten Spiegel an einem fest stehenden Spiegelbild vorbei.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/cabinet.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="container">
-            <div class="logo">
-                <img src="images/logo.png" alt="Miller & Bernhauer Logo">
-                <div class="logo-text">
-                    <h1>Miller & Bernhauer</h1>
-                    <p>Rechtsanwälte Fachanwälte</p>
-                </div>
-            </div>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">Über Uns</a></li>
-                <li><a href="#expertise">Fachgebiete</a></li>
-                <li><a href="#team">Anwälte</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1>Kompetente Rechtsberatung in Ulm</h1>
-                <h2>Zuverlässig. Persönlich. Erfahren.</h2>
-                <p>Seit mehr als 25 Jahren Ihr verlässlicher Partner in rechtlichen Angelegenheiten</p>
-                <a href="#contact" class="btn btn-primary">Kontakt aufnehmen</a>
-            </div>
-        </div>
-    </section>
+<header class="bar">
+  <a class="brand" href="#eingang">Spiegel<span>kabinett</span></a>
+  <p class="where" aria-live="polite"><span data-where-no>0</span><i>/</i>9 <b data-where-name>Konvexspiegel</b></p>
+  <button class="troll-toggle" type="button" id="troll" aria-pressed="false"><span>Mensch</span><span>Troll</span></button>
+</header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2>Über Unsere Kanzlei</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Seit 1995 bietet die Kanzlei Miller & Bernhauer spezialisierte Rechtsberatung in verschiedenen Rechtsbereichen. Unsere Fachanwälte stehen Ihnen mit fundiertem Fachwissen und langjähriger Erfahrung zur Seite.</p>
-                    <p>Wir legen großen Wert auf eine persönliche und individuelle Betreuung unserer Mandanten. Jeder Fall wird mit höchster Sorgfalt und Professionalität behandelt, um optimale Lösungen zu erzielen.</p>
-                    <p>Durch regelmäßige Fortbildungen und die Mitgliedschaft in Fachverbänden stellen wir sicher, dass wir stets über aktuelle Rechtsprechungen und Gesetzesänderungen informiert sind.</p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">1995</div>
-                        <div class="stat-text">Kanzleigründung</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">10+</div>
-                        <div class="stat-text">Fachgebiete</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">2</div>
-                        <div class="stat-text">Fachanwälte</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<main>
 
-    <!-- Expertise Section -->
-    <section id="expertise" class="expertise">
-        <div class="container">
-            <div class="section-header">
-                <h2>Unsere Fachgebiete</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="expertise-grid">
-                <div class="expertise-card">
-                    <div class="card-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3>Bau- und Architektenrecht</h3>
-                    <p>Vertragsgestaltung, Baumängel, Architektenverträge, Bauzeitverzögerungen und mehr.</p>
-                </div>
-                <div class="expertise-card">
-                    <div class="card-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h3>Miet- und Wohnungseigentumsrecht</h3>
-                    <p>Mietverträge, Kündigung, Mieterhöhung, WEG-Recht, Eigentümerversammlungen.</p>
-                </div>
-                <div class="expertise-card">
-                    <div class="card-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <h3>Wirtschaftsrecht</h3>
-                    <p>Handelsrecht, Gesellschaftsrecht, Vertragsrecht, Forderungsmanagement.</p>
-                </div>
-                <div class="expertise-card">
-                    <div class="card-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Familienrecht</h3>
-                    <p>Scheidung, Sorgerecht, Unterhalt, Zugewinn, Eheverträge und Mediation.</p>
-                </div>
-                <div class="expertise-card">
-                    <div class="card-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h3>Arbeitsrecht</h3>
-                    <p>Kündigung, Abfindung, Arbeitsverträge, Zeugnisse, Arbeitsschutz.</p>
-                </div>
-                <div class="expertise-card">
-                    <div class="card-icon">
-                        <i class="fas fa-file-signature"></i>
-                    </div>
-                    <h3>Erbrecht</h3>
-                    <p>Testamentsgestaltung, Erbfolge, Pflichtteil, Testamentsvollstreckung.</p>
-                </div>
-                <div class="expertise-card">
-                    <div class="card-icon">
-                        <i class="fas fa-truck"></i>
-                    </div>
-                    <h3>Transport- und Speditionsrecht</h3>
-                    <p>Transportschäden, Frachtrecht, internationale Transporte.</p>
-                </div>
-                <div class="expertise-card">
-                    <div class="card-icon">
-                        <i class="fas fa-key"></i>
-                    </div>
-                    <h3>Makler- und Immobilienrecht</h3>
-                    <p>Immobilienverträge, Maklerprovision, Gewährleistung beim Immobilienkauf.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- 0 · convex mirror -->
+<section class="station st-convex" id="eingang" data-name="Konvexspiegel">
+  <div class="copy copy-a">
+    <p class="no">Spiegel 0 · Konvex, gewölbt</p>
+    <h1>Das hier<br><em>bist du.</em></h1>
+  </div>
+  <figure class="mirror-wrap">
+    <div class="mirror" data-mirror="convex" data-variant="hero"></div>
+    <div class="frame" aria-hidden="true"></div>
+  </figure>
+  <div class="copy copy-b">
+    <p>Niemand hat dich fotografiert. Diese Person entsteht gerade in deinem Browser, Bild für Bild, und sie schaut dahin, wo deine Maus ist.</p>
+    <p>Scroll weiter. Sie bleibt, wo sie ist. Nur die Spiegel ziehen an ihr vorbei.</p>
+    <p class="note">Gewölbt wie bei Parmigianino, der sich um 1524 nach einem Barbierspiegel malte, auf eine eigens gewölbte Holztafel. Heute hängt sie in Wien.</p>
+  </div>
+  <p class="scroll-cue" aria-hidden="true">Scrollen</p>
+</section>
 
-    <!-- Team Section -->
-    <section id="team" class="team">
-        <div class="container">
-            <div class="section-header">
-                <h2>Unsere Anwälte</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="images/miller.png" alt="Harald Miller">
-                    </div>
-                    <div class="member-info">
-                        <h3>Harald Miller</h3>
-                        <p class="member-title">Fachanwalt für Bau- und Architektenrecht</p>
-                        <p class="member-bio">Rechtsanwalt Harald Miller studierte Rechtswissenschaften an der Universität in Konstanz und ist seit 1995 Rechtsanwalt in Ulm.</p>
-                        <div class="member-specialties">
-                            <h4>Fachgebiete:</h4>
-                            <ul>
-                                <li>Bau- und Architektenrecht (Privat und Öffentlich)</li>
-                                <li>Miet- und Wohnungseigentumsrecht</li>
-                                <li>Wirtschaftsrecht</li>
-                                <li>Makler- und Immobilienrecht</li>
-                                <li>Vertragsgestaltung</li>
-                                <li>Arzthaftungsrecht</li>
-                            </ul>
-                        </div>
-                        <div class="member-memberships">
-                            <h4>Mitgliedschaften:</h4>
-                            <ul>
-                                <li>Rechtsanwaltskammer Stuttgart</li>
-                                <li>Deutscher Anwaltsverein</li>
-                                <li>Anwaltsverein für den LG-Bezirk Ulm</li>
-                                <li>Mitglied der Arbeitsgemeinschaft im Deutschen Anwaltsverein für Baurecht</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="images/bernhauer.png" alt="Walter Bernhauer">
-                    </div>
-                    <div class="member-info">
-                        <h3>Walter Bernhauer</h3>
-                        <p class="member-title">Fachanwalt für Familienrecht und Arbeitsrecht</p>
-                        <p class="member-bio">Rechtsanwalt Walter Bernhauer studierte Rechtswissenschaften an der Universität in Konstanz und ist seit 1997 Rechtsanwalt in Ulm.</p>
-                        <div class="member-specialties">
-                            <h4>Fachgebiete:</h4>
-                            <ul>
-                                <li>Familienrecht</li>
-                                <li>Arbeitsrecht</li>
-                                <li>Erbrecht</li>
-                                <li>Transport- und Speditionsrecht</li>
-                            </ul>
-                        </div>
-                        <div class="member-memberships">
-                            <h4>Mitgliedschaften:</h4>
-                            <ul>
-                                <li>Arbeitsgemeinschaft Arbeitsrecht im Deutschen Anwaltsverein</li>
-                                <li>Arbeitsgemeinschaft Transport- und Speditionsrecht im Deutschen Anwaltsverein</li>
-                                <li>Deutsche Gesellschaft für Transportrecht e.V.</li>
-                                <li>Rechtsanwaltskammer Stuttgart</li>
-                                <li>ISUV / VDU e.V.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- 1 · steamed bathroom mirror -->
+<section class="station st-fog" id="dampf" data-name="Badezimmerspiegel">
+  <div class="copy copy-a">
+    <p class="no">Spiegel 1 · Badezimmer, 7:14 Uhr</p>
+    <h2>Erst mal <em>freiwischen.</em></h2>
+  </div>
+  <figure class="mirror-wrap">
+    <div class="mirror" data-mirror="fog" data-variant="fog"></div>
+    <div class="frame" aria-hidden="true"></div>
+  </figure>
+  <div class="copy copy-b">
+    <p>Morgens bist du ein heller Fleck im Dampf. Fahr mit der Maus über das Glas, oder wisch mit dem Finger quer darüber.</p>
+    <p>Der Dampf kommt langsam wieder, wie jeden Morgen.</p>
+  </div>
+</section>
 
-    <!-- Testimonial Section -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>Das sagen unsere Mandanten</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="testimonial-slider">
-                <div class="testimonial-item active">
-                    <div class="testimonial-content">
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p>Herr Miller hat uns bei einem komplexen Baurechtsfall hervorragend vertreten. Seine Fachkenntnis und strategische Vorgehensweise haben zu einem sehr zufriedenstellenden Ergebnis geführt.</p>
-                        <div class="client-info">
-                            <h4>S. Müller</h4>
-                            <p>Bauunternehmer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p>In einer schwierigen familienrechtlichen Situation hat uns Herr Bernhauer sowohl rechtlich als auch menschlich kompetent unterstützt. Wir fühlten uns stets gut aufgehoben.</p>
-                        <div class="client-info">
-                            <h4>K. Schmidt</h4>
-                            <p>Privatmandant</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p>Die Kanzlei Miller & Bernhauer betreut unser Unternehmen seit Jahren in arbeitsrechtlichen Fragen. Die Beratung ist stets lösungsorientiert und praxisnah.</p>
-                        <div class="client-info">
-                            <h4>T. Weber</h4>
-                            <p>Geschäftsführer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-controls">
-                <div class="testimonial-dots">
-                    <span class="dot active" data-slide="0"></span>
-                    <span class="dot" data-slide="1"></span>
-                    <span class="dot" data-slide="2"></span>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- 2 · pond -->
+<section class="station st-water stack" id="wasser" data-name="Wasser">
+  <div class="copy copy-a">
+    <p class="no">Spiegel 2 · Teich, Abendlicht</p>
+    <h2><em>Iste ego sum.</em></h2>
+  </div>
+  <figure class="mirror-wrap">
+    <div class="mirror" data-mirror="water" data-variant="water"></div>
+  </figure>
+  <div class="copy copy-b">
+    <p>»Der da bin ich«, sagt Narziss bei Ovid, als er endlich begreift, wen er im Wasser liebt (Metamorphosen III, 463). Das Wasser schmeichelt: weicheres Licht, wachere Augen, ein Lächeln, das du heute noch nicht hattest.</p>
+    <p class="hint">Tipp ins Wasser, dann zerfällt die schöne Version in Ringe.</p>
+  </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Kontakt</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Adresse</h3>
-                            <p>Rechtsanwaltskanzlei Miller & Bernhauer<br>
-                            Rosengasse 15<br>
-                            89073 Ulm</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Telefon & Fax</h3>
-                            <p>Tel: 0731 / 14031-0<br>
-                            Fax: 0731 / 14031-29</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="text">
-                            <h3>E-Mail</h3>
-                            <p><a href="mailto:info@mwb-ra.de">info@mwb-ra.de</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Öffnungszeiten</h3>
-                            <p>Mo - Fr: 8:30 - 12:30 Uhr<br>
-                            Mo - Do: 14:00 - 17:00 Uhr<br>
-                            und nach Vereinbarung</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <h3>Kontaktformular</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Name *" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="E-Mail *" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder="Telefon">
-                        </div>
-                        <div class="form-group">
-                            <select id="subject" name="subject" required>
-                                <option value="" disabled selected>Thema auswählen *</option>
-                                <option value="Bau- und Architektenrecht">Bau- und Architektenrecht</option>
-                                <option value="Miet- und Wohnungseigentumsrecht">Miet- und Wohnungseigentumsrecht</option>
-                                <option value="Familienrecht">Familienrecht</option>
-                                <option value="Arbeitsrecht">Arbeitsrecht</option>
-                                <option value="Erbrecht">Erbrecht</option>
-                                <option value="Sonstiges">Sonstiges</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Ihre Nachricht *" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <div class="checkbox-group">
-                                <input type="checkbox" id="privacy" name="privacy" required>
-                                <label for="privacy">Ich habe die <a href="#" class="privacy-link">Datenschutzerklärung</a> gelesen und akzeptiere diese. *</label>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Nachricht senden</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- 3 · fairground -->
+<section class="station st-fun stack" id="kirmes" data-name="Zerrspiegel">
+  <div class="copy copy-a">
+    <p class="no">Spiegel 3 bis 5 · Kirmes, Lachkabinett</p>
+    <h2>Dreimal du. <em>Keiner stimmt.</em></h2>
+  </div>
+  <figure class="mirror-wrap triple">
+    <div class="panel"><div class="mirror" data-mirror="funhouse" data-variant="fun" data-idx="0"></div><div class="frame" aria-hidden="true"></div></div>
+    <div class="panel"><div class="mirror" data-mirror="funhouse" data-variant="fun" data-idx="1"></div><div class="frame" aria-hidden="true"></div></div>
+    <div class="panel"><div class="mirror" data-mirror="funhouse" data-variant="fun" data-idx="2"></div><div class="frame" aria-hidden="true"></div></div>
+  </figure>
+  <div class="copy copy-b">
+    <p>Zerrspiegel lügen nicht, sie übertreiben. Der linke macht dich lang, der mittlere zum Wackelpudding, der rechte breit. Dein Gesicht verteilt sich über alle drei.</p>
+    <p class="hint">Scroll langsam, dann siehst du das Glas arbeiten.</p>
+  </div>
+</section>
 
-    <!-- Map Section -->
-    <section class="map">
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.1064330769113!2d9.98753431570711!3d48.397937479246814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799541659ccc0bd%3A0xeb8ca81f99c40721!2sRosengasse%2015%2C%2089073%20Ulm!5e0!3m2!1sde!2sde!4v1650000000000!5m2!1sde!2sde" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
+<!-- 4 · portrait -->
+<section class="station st-portrait" id="bildnis" data-name="Bildnis">
+  <div class="copy copy-a">
+    <p class="no">Spiegel 6 · Öl auf Leinwand</p>
+    <h2>Das Bild altert <em>für dich.</em></h2>
+  </div>
+  <figure class="mirror-wrap">
+    <div class="mirror" data-mirror="portrait" data-variant="portrait"></div>
+    <div class="frame" aria-hidden="true"></div>
+    <figcaption class="plaque"><b>Bildnis eines jungen Mannes</b>Unbekannter Meister, heute</figcaption>
+  </figure>
+  <div class="copy copy-b">
+    <p>Bei Oscar Wilde bleibt Dorian Gray jung, während sein Porträt hinter verschlossener Tür jedes Jahr und jede Gemeinheit trägt.</p>
+    <p>Scroll weiter und sieh zu, wie dein Bildnis die Rechnung bezahlt. Die Augen folgen dir trotzdem, so wie in jedem guten Museum.</p>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="images/logo.png" alt="Miller & Bernhauer Logo">
-                    <div class="footer-logo-text">
-                        <h3>Miller & Bernhauer</h3>
-                        <p>Rechtsanwälte Fachanwälte</p>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="#" class="impressum-link">Impressum</a></li>
-                        <li><a href="#" class="privacy-link">Datenschutz</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Miller & Bernhauer Rechtsanwälte. Alle Rechte vorbehalten.</p>
-            </div>
-        </div>
-    </footer>
+<!-- 5 · broken mirror -->
+<section class="station st-shards" id="scherben" data-name="Scherben">
+  <div class="copy copy-a">
+    <p class="no">Spiegel 7 · zerbrochen</p>
+    <h2>Sieben Jahre <em>Pech.</em></h2>
+  </div>
+  <figure class="mirror-wrap">
+    <div class="mirror" data-mirror="shards" data-variant="shards"></div>
+    <div class="frame" aria-hidden="true"></div>
+  </figure>
+  <div class="copy copy-b">
+    <p>So sagt es der Aberglaube. Jede Scherbe zeigt dich ein Stück verschoben, keine zeigt dich ganz.</p>
+    <p class="hint">Klick ins Glas, und es bricht an dieser Stelle neu.</p>
+    <p class="counter">Bisher <b data-years>7</b> Jahre Pech.</p>
+  </div>
+</section>
 
-    <!-- Modal Impressum -->
-    <div id="impressumModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>Impressum</h2>
-            <div class="modal-body">
-                <h3>Angaben gemäß § 5 TMG und DL-InfoV</h3>
-                <p>Rechtsanwälte Miller & Bernhauer<br>
-                Rechtsanwälte & Fachanwälte<br>
-                Rosengasse 15<br>
-                89073 Ulm</p>
-                
-                <p>Gesellschafter: Harald Miller & Walter Bernhauer</p>
-                
-                <p>Telefon: +49.731.14031.0<br>
-                Telefax: +49.731.14031.29<br>
-                Mail: info@mwb-ra.de</p>
-                
-                <p>Umsatzsteueridentifikationsnummer: DE208073660<br>
-                Finanzamt Ulm, Steuer-Nummer: 88019138546</p>
-                
-                <h3>Berufsbezeichnung und berufsrechtliche Regelungen</h3>
-                <p>Berufsbezeichnung: Rechtsanwalt (Bundesrepublik Deutschland)</p>
-                <p>Zuständige Kammer: Rechtsanwaltskammer Stuttgart</p>
-                <p>Berufsrechtliche Regelungen:</p>
-                <ul>
-                    <li>Bundesrechtsanwaltsordnung (BRAO)</li>
-                    <li>Berufsordnung für Rechtsanwälte (BORA)</li>
-                    <li>Fachanwaltsordnung (FAO)</li>
-                    <li>Rechtsanwaltsvergütungsgesetz (RVG)</li>
-                </ul>
-                <p>Die berufsrechtlichen Regelungen können unter <a href="https://www.brak.de/fuer-anwaelte/berufsrecht/" target="_blank">www.brak.de</a> eingesehen werden.</p>
-                
-                <h3>Streitschlichtung</h3>
-                <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a></p>
-                <p>Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
-                <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
-            </div>
-        </div>
+<!-- 6 · black mirror -->
+<section class="station st-phone" id="display" data-name="Schwarzer Spiegel">
+  <div class="copy copy-a">
+    <p class="no">Spiegel 8 · Display, ausgeschaltet</p>
+    <h2>Der Spiegel, in den du <em>am häufigsten</em> schaust.</h2>
+  </div>
+  <figure class="mirror-wrap">
+    <div class="mirror" data-mirror="phone" data-variant="phone">
+      <div class="lock" aria-hidden="true">
+        <p class="lock-date" data-date>Samstag</p>
+        <p class="lock-time" data-time>23:48</p>
+        <ul class="notes">
+          <li><b>Bildschirmzeit</b>Gestern 5 Std. 12 Min., 9 % mehr als letzte Woche.</li>
+          <li><b>Mama</b>Hast du schon was gegessen?</li>
+          <li><b>Erinnerung</b>Spiegel putzen.</li>
+        </ul>
+      </div>
     </div>
+    <div class="frame" aria-hidden="true"></div>
+  </figure>
+  <div class="copy copy-b">
+    <p>Im 18. Jahrhundert drehten Reisende der Landschaft den Rücken zu und betrachteten sie in einem kleinen, dunkel getönten Spiegel, dem Claude-Glas. Heute hält jeder so ein schwarzes Glas in der Hand.</p>
+    <p>Du siehst dich darin nur, solange es aus ist. Sobald es leuchtet, bist du weg.</p>
+    <p class="hint">Tipp aufs Display, um es selbst an- und auszuschalten.</p>
+  </div>
+</section>
 
-    <!-- Modal Datenschutz -->
-    <div id="privacyModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>Datenschutzerklärung</h2>
-            <div class="modal-body">
-                <h3>1. Datenschutz auf einen Blick</h3>
-                <h4>Allgemeine Hinweise</h4>
-                <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
-                
-                <h4>Datenerfassung auf unserer Website</h4>
-                <p>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</p>
-                <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.</p>
-                
-                <h4>Wie erfassen wir Ihre Daten?</h4>
-                <p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben.</p>
-                <p>Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie unsere Website betreten.</p>
-                
-                <h4>Wofür nutzen wir Ihre Daten?</h4>
-                <p>Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.</p>
-                
-                <h4>Welche Rechte haben Sie bezüglich Ihrer Daten?</h4>
-                <p>Sie haben jederzeit das Recht unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung, Sperrung oder Löschung dieser Daten zu verlangen. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.</p>
-                
-                <!-- More privacy policy content would go here, this is just a sample -->
-                
-                <h3>2. Allgemeine Hinweise und Pflichtinformationen</h3>
-                <h4>Datenschutz</h4>
-                <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
-                
-                <h4>Hinweis zur verantwortlichen Stelle</h4>
-                <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
-                <p>Rechtsanwälte Miller & Bernhauer<br>
-                Rosengasse 15<br>
-                89073 Ulm</p>
-                
-                <p>Telefon: 0731 / 14031-0<br>
-                E-Mail: info@mwb-ra.de</p>
-            </div>
-        </div>
+<!-- 7 · through the looking-glass -->
+<section class="station st-portal" id="portal" data-name="Durch den Spiegel">
+  <div class="copy copy-a">
+    <p class="no">Spiegel 9 · die andere Seite</p>
+    <h2>Durch den <em>Spiegel.</em></h2>
+  </div>
+  <figure class="mirror-wrap">
+    <div class="mirror" data-mirror="portal" data-variant="portal"></div>
+    <div class="frame" aria-hidden="true"></div>
+  </figure>
+  <div class="copy copy-b">
+    <p>Bei Lewis Carroll klettert Alice 1871 durch den Spiegel über dem Kamin und landet in einer Partie Schach. Auf der anderen Seite läuft alles verkehrt herum.</p>
+    <p>Auch dein Spiegelbild: Es schaut genau dahin, wo du nicht hinschaust.</p>
+    <p class="mirrored" aria-hidden="true">Hier ist alles seitenverkehrt.</p>
+  </div>
+</section>
+
+<!-- 8 · the queen's mirror -->
+<section class="station st-magic" id="zauberspiegel" data-name="Zauberspiegel">
+  <div class="copy copy-a">
+    <p class="no">Zugabe · an der Wand</p>
+    <h2>Spieglein, Spieglein <em>an der Wand.</em></h2>
+  </div>
+  <figure class="mirror-wrap">
+    <div class="mirror" data-mirror="magic" data-variant="magic" data-stage="0">
+      <p class="speech s1" aria-hidden="true">Die Wahrheit? Gern.</p>
+      <p class="speech s2" aria-hidden="true">Bitte sehr.</p>
     </div>
+    <div class="frame" aria-hidden="true"></div>
+  </figure>
+  <div class="copy copy-b">
+    <p>Bei den Brüdern Grimm sagt der Spiegel der Königin die Wahrheit, auch die, die sie nicht hören will. Dieser hier auch.</p>
+    <p>Frag ruhig, wer die Schönste im ganzen Land ist. Und scroll weiter.</p>
+  </div>
+</section>
 
-    <script src="main.js"></script>
+<!-- 9 · plain mirror, and the visitor's own face -->
+<section class="station st-plain" id="ohne-filter" data-name="Ohne Filter">
+  <div class="copy copy-a">
+    <p class="no">Letzter Spiegel · ohne Filter</p>
+    <h2>Und jetzt <em>wirklich du.</em></h2>
+  </div>
+  <figure class="mirror-wrap">
+    <div class="mirror" data-mirror="plain" data-variant="plain"></div>
+    <div class="frame" aria-hidden="true"></div>
+  </figure>
+  <div class="copy copy-b">
+    <p>Bisher hat dich eine Figur vertreten. Schalte die Kamera ein oder wähl ein Foto, dann zeigt jeder Spiegel dieser Seite dich: mit Dampf, Wasser, Scherben und Troll.</p>
+    <div class="controls">
+      <button type="button" class="btn" id="cam">Kamera einschalten</button>
+      <label class="btn" for="photo">Foto wählen</label>
+      <input type="file" id="photo" accept="image/*" hidden>
+      <button type="button" class="btn quiet" id="figure" hidden>Zurück zur Figur</button>
+    </div>
+    <div class="align" hidden>
+      <p>Zieh im Spiegel, bis dein Gesicht in der Mitte sitzt.</p>
+      <div class="zoom"><button type="button" class="btn small" id="zoom-out" aria-label="Kleiner">−</button><button type="button" class="btn small" id="zoom-in" aria-label="Größer">+</button></div>
+    </div>
+    <p class="status" id="status" role="status"></p>
+    <p class="note">Das Bild bleibt in deinem Browser. Nichts wird gesendet oder gespeichert.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>Spiegelkabinett. Ein Experiment: Die Figur, ihre Gesichter und alle Spiegel werden live in WebGL berechnet, Bild für Bild.</p>
+</footer>
+
+<script src="js/head.js"></script>
+<script src="js/glass.js"></script>
+<script src="js/cabinet.js"></script>
+<script src="js/site.js"></script>
 </body>
 </html>
