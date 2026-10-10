@@ -37,8 +37,11 @@
   /* camera, photo, back to the figure */
   const status = $('#status'), fig = $('#figure'), align = $('.align');
   const say = (t) => { status.textContent = t; };
+  /* texts that talk about the figure get a second version for a photo */
+  const swaps = [...document.querySelectorAll('[data-photo-text]')].map((el) => ({ el, fig: el.textContent, photo: el.dataset.photoText }));
   document.addEventListener('sk-source', (e) => {
     const k = e.detail;
+    swaps.forEach((w) => { w.el.textContent = k === 'photo' ? w.photo : w.fig; });
     fig.hidden = k === 'sdf'; align.hidden = k !== 'photo';
     say(k === 'cam' ? 'Kamera an. Scroll nach oben, alle Spiegel zeigen jetzt dich.' : k === 'photo' ? 'Foto geladen. Alle Spiegel zeigen jetzt dieses Gesicht.' : '');
   });

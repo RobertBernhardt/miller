@@ -476,8 +476,8 @@ void main(){
   c=mix(c, vec3(l)*vec3(1.05,.88,.66), uAge*.7);
   c=mix(c, c*vec3(.55,.7,1.1), uGlow*.5);
   float inside=smoothstep(0.,.03,s.x)*smoothstep(0.,.03,s.y)*smoothstep(1.,.97,s.x)*smoothstep(1.,.97,s.y);
-  float a=smoothstep(1.,.78,length((d-vec2(0.,.0))/vec2(.40,.52)))*inside;
-  a=max(a, smoothstep(1.,.8,length((d-vec2(0.,-.62))/vec2(.62,.3)))*inside*smoothstep(-1.,-.6,d.y));
+  float a=smoothstep(1.,.72,length((d-vec2(.0,.01))/vec2(.29,.40)))*inside;
+  a=max(a, smoothstep(1.,.7,length((d-vec2(0.,-.50))/vec2(.40,.22)))*inside*smoothstep(-.95,-.6,d.y));
   outColor=vec4(c*a, a);
 }`;
 
