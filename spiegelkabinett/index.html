@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="de" data-face="img/face.jpg" data-face-frame="0.41,0.45,1.17">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#140e0c">
+<title>Spiegelkabinett</title>
+<meta name="description" content="Neun Spiegel, eine Person: Beim Scrollen gleiten Spiegel an einem fest stehenden Spiegelbild vorbei.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/cabinet.css">
+</head>
+<body>
+
+<header class="bar">
+  <a class="brand" href="#eingang">Spiegel<span>kabinett</span></a>
+  <p class="where" aria-live="polite"><span data-where-no>0</span><i>/</i>9 <b data-where-name>Konvexspiegel</b></p>
+  <button class="troll-toggle" type="button" id="troll" aria-pressed="false"><span>Mensch</span><span>Troll</span></button>
+</header>
+
+<main>
+
+<!-- 0 · convex mirror -->
+<section class="station st-convex" id="eingang" data-name="Konvexspiegel">
+  <div class="copy copy-a">
+    <p class="no">Spiegel 0 · Konvex, gewölbt</p>
+    <h1>Das hier<br><em>bist du.</em></h1>
+  </div>
+  <figure class="mirror-wrap">
+    <div class="mirror" data-mirror="convex" data-variant="hero"></div>
+    <div class="frame" aria-hidden="true"></div>
+  </figure>
+  <div class="copy copy-b">
+    <p>Niemand hat dich fotografiert. Diese Person entsteht gerade in deinem Browser, Bild für Bild, und sie schaut dahin, wo deine Maus ist.</p>
+    <p>Scroll weiter. Sie bleibt, wo sie ist. Nur die Spiegel ziehen an ihr vorbei.</p>
+    <p class="note">Gewölbt wie bei Parmigianino, der sich um 1524 nach einem Barbierspiegel malte, auf eine eigens gewölbte Holztafel. Heute hängt sie in Wien.</p>
+  </div>
+  <p class="scroll-cue" aria-hidden="true">Scrollen</p>
+</section>
+
+<!-- 1 · steamed bathroom mirror -->
+<section class="station st-fog" id="dampf" data-name="Badezimmerspiegel">
+  <div class="copy copy-a">
+    <p class="no">Spiegel 1 · Badezimmer, 7:14 Uhr</p>
+    <h2>Erst mal <em>freiwischen.</em></h2>
+  </div>
+  <figure class="mirror-wrap">
+    <div class="mirror" data-mirror="fog" data-variant="fog"></div>
+    <div class="frame" aria-hidden="true"></div>
+  </figure>
+  <div class="copy copy-b">
+    <p>Morgens bist du ein heller Fleck im Dampf. Fahr mit der Maus über das Glas, oder wisch mit dem Finger quer darüber.</p>
+    <p>Der Dampf kommt langsam wieder, wie jeden Morgen.</p>
+  </div>
+</section>
+
+<!-- 2 · pond -->
+<section class="station st-water stack" id="wasser" data-name="Wasser">
+  <div class="copy copy-a">
+    <p class="no">Spiegel 2 · Teich, Abendlicht</p>
+    <h2><em>Iste ego sum.</em></h2>
+  </div>
+  <figure class="mirror-wrap">
+    <div class="mirror" data-mirror="water" data-variant="water"></div>
+  </figure>
+  <div class="copy copy-b">
+    <p>»Der da bin ich«, sagt Narziss bei Ovid, als er endlich begreift, wen er im Wasser liebt (Metamorphosen III, 463). Das Wasser schmeichelt: weicheres Licht, wachere Augen, ein Lächeln, das du heute noch nicht hattest.</p>
+    <p class="hint">Tipp ins Wasser, dann zerfällt die schöne Version in Ringe.</p>
+  </div>
+</section>
+
+<!-- 3 · fairground -->
+<section class="station st-fun stack" id="kirmes" data-name="Zerrspiegel">
+  <div class="copy copy-a">
+    <p class="no">Spiegel 3 bis 5 · Kirmes, Lachkabinett</p>
+    <h2>Dreimal du. <em>Keiner stimmt.</em></h2>
+  </div>
+  <figure class="mirror-wrap triple">
+    <div class="panel"><div class="mirror" data-mirror="funhouse" data-variant="fun" data-idx="0"></div><div class="frame" aria-hidden="true"></div></div>
+    <div class="panel"><div class="mirror" data-mirror="funhouse" data-variant="fun" data-idx="1"></div><div class="frame" aria-hidden="true"></div></div>
+    <div class="panel"><div class="mirror" data-mirror="funhouse" data-variant="fun" data-idx="2"></div><div class="frame" aria-hidden="true"></div></div>
+  </figure>
+  <div class="copy copy-b">
+    <p>Zerrspiegel lügen nicht, sie übertreiben. Der linke macht dich lang, der mittlere zum Wackelpudding, der rechte breit. Dein Gesicht verteilt sich über alle drei.</p>
+    <p class="hint">Scroll langsam, dann siehst du das Glas arbeiten.</p>
+  </div>
+</section>
+
+<!-- 4 · portrait -->
+<section class="station st-portrait" id="bildnis" data-name="Bildnis">
+  <div class="copy copy-a">
+    <p class="no">Spiegel 6 · Öl auf Leinwand</p>
+    <h2>Das Bild altert <em>für dich.</em></h2>
+  </div>
+  <figure class="mirror-wrap">
+    <div class="mirror" data-mirror="portrait" data-variant="portrait"></div>
+    <div class="frame" aria-hidden="true"></div>
+    <figcaption class="plaque"><b>Bildnis eines jungen Mannes</b>Unbekannter Meister, heute</figcaption>
+  </figure>
+  <div class="copy copy-b">
+    <p>Bei Oscar Wilde bleibt Dorian Gray jung, während sein Porträt hinter verschlossener Tür jedes Jahr und jede Gemeinheit trägt.</p>
+    <p>Scroll weiter und sieh zu, wie dein Bildnis die Rechnung bezahlt. Die Augen folgen dir trotzdem, so wie in jedem guten Museum.</p>
+  </div>
+</section>
+
+<!-- 5 · broken mirror -->
+<section class="station st-shards" id="scherben" data-name="Scherben">
+  <div class="copy copy-a">
+    <p class="no">Spiegel 7 · zerbrochen</p>
+    <h2>Sieben Jahre <em>Pech.</em></h2>
+  </div>
+  <figure class="mirror-wrap">
+    <div class="mirror" data-mirror="shards" data-variant="shards"></div>
+    <div class="frame" aria-hidden="true"></div>
+  </figure>
+  <div class="copy copy-b">
+    <p>So sagt es der Aberglaube. Jede Scherbe zeigt dich ein Stück verschoben, keine zeigt dich ganz.</p>
+    <p class="hint">Klick ins Glas, und es bricht an dieser Stelle neu.</p>
+    <p class="counter">Bisher <b data-years>7</b> Jahre Pech.</p>
+  </div>
+</section>
+
+<!-- 6 · black mirror -->
+<section class="station st-phone" id="display" data-name="Schwarzer Spiegel">
+  <div class="copy copy-a">
+    <p class="no">Spiegel 8 · Display, ausgeschaltet</p>
+    <h2>Der Spiegel, in den du <em>am häufigsten</em> schaust.</h2>
+  </div>
+  <figure class="mirror-wrap">
+    <div class="mirror" data-mirror="phone" data-variant="phone">
+      <div class="lock" aria-hidden="true">
+        <p class="lock-date" data-date>Samstag</p>
+        <p class="lock-time" data-time>23:48</p>
+        <ul class="notes">
+          <li><b>Bildschirmzeit</b>Gestern 5 Std. 12 Min., 9 % mehr als letzte Woche.</li>
+          <li><b>Mama</b>Hast du schon was gegessen?</li>
+          <li><b>Erinnerung</b>Spiegel putzen.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="frame" aria-hidden="true"></div>
+  </figure>
+  <div class="copy copy-b">
+    <p>Im 18. Jahrhundert drehten Reisende der Landschaft den Rücken zu und betrachteten sie in einem kleinen, dunkel getönten Spiegel, dem Claude-Glas. Heute hält jeder so ein schwarzes Glas in der Hand.</p>
+    <p>Du siehst dich darin nur, solange es aus ist. Sobald es leuchtet, bist du weg.</p>
+    <p class="hint">Tipp aufs Display, um es selbst an- und auszuschalten.</p>
+  </div>
+</section>
+
+<!-- 7 · through the looking-glass -->
+<section class="station st-portal" id="portal" data-name="Durch den Spiegel">
+  <div class="copy copy-a">
+    <p class="no">Spiegel 9 · die andere Seite</p>
+    <h2>Durch den <em>Spiegel.</em></h2>
+  </div>
+  <figure class="mirror-wrap">
+    <div class="mirror" data-mirror="portal" data-variant="portal"></div>
+    <div class="frame" aria-hidden="true"></div>
+  </figure>
+  <div class="copy copy-b">
+    <p>Bei Lewis Carroll klettert Alice 1871 durch den Spiegel über dem Kamin und landet in einer Partie Schach. Auf der anderen Seite läuft alles verkehrt herum.</p>
+    <p>Auch dein Spiegelbild: Es schaut genau dahin, wo du nicht hinschaust.</p>
+    <p class="mirrored" aria-hidden="true">Hier ist alles seitenverkehrt.</p>
+  </div>
+</section>
+
+<!-- 8 · the queen's mirror -->
+<section class="station st-magic" id="zauberspiegel" data-name="Zauberspiegel">
+  <div class="copy copy-a">
+    <p class="no">Zugabe · an der Wand</p>
+    <h2>Spieglein, Spieglein <em>an der Wand.</em></h2>
+  </div>
+  <figure class="mirror-wrap">
+    <div class="mirror" data-mirror="magic" data-variant="magic" data-stage="0">
+      <p class="speech s1" aria-hidden="true">Die Wahrheit? Gern.</p>
+      <p class="speech s2" aria-hidden="true">Bitte sehr.</p>
+    </div>
+    <div class="frame" aria-hidden="true"></div>
+  </figure>
+  <div class="copy copy-b">
+    <p>Bei den Brüdern Grimm sagt der Spiegel der Königin die Wahrheit, auch die, die sie nicht hören will. Dieser hier auch.</p>
+    <p>Frag ruhig, wer die Schönste im ganzen Land ist. Und scroll weiter.</p>
+  </div>
+</section>
+
+<!-- 9 · plain mirror, and the visitor's own face -->
+<section class="station st-plain" id="ohne-filter" data-name="Ohne Filter">
+  <div class="copy copy-a">
+    <p class="no">Letzter Spiegel · ohne Filter</p>
+    <h2>Und jetzt <em>wirklich du.</em></h2>
+  </div>
+  <figure class="mirror-wrap">
+    <div class="mirror" data-mirror="plain" data-variant="plain"></div>
+    <div class="frame" aria-hidden="true"></div>
+  </figure>
+  <div class="copy copy-b">
+    <p>Bisher hat dich eine Figur vertreten. Schalte die Kamera ein oder wähl ein Foto, dann zeigt jeder Spiegel dieser Seite dich: mit Dampf, Wasser, Scherben und Troll.</p>
+    <div class="controls">
+      <button type="button" class="btn" id="cam">Kamera einschalten</button>
+      <label class="btn" for="photo">Foto wählen</label>
+      <input type="file" id="photo" accept="image/*" hidden>
+      <button type="button" class="btn quiet" id="figure" hidden>Zurück zur Figur</button>
+    </div>
+    <div class="align" hidden>
+      <p>Zieh im Spiegel, bis dein Gesicht in der Mitte sitzt.</p>
+      <div class="zoom"><button type="button" class="btn small" id="zoom-out" aria-label="Kleiner">−</button><button type="button" class="btn small" id="zoom-in" aria-label="Größer">+</button></div>
+    </div>
+    <p class="status" id="status" role="status"></p>
+    <p class="note">Das Bild bleibt in deinem Browser. Nichts wird gesendet oder gespeichert.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>Spiegelkabinett. Ein Experiment: Die Figur, ihre Gesichter und alle Spiegel werden live in WebGL berechnet, Bild für Bild.</p>
+</footer>
+
+<script src="js/head.js"></script>
+<script src="js/glass.js"></script>
+<script src="js/cabinet.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
